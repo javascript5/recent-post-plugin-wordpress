@@ -1,0 +1,59 @@
+.promotion_filter {
+    width: 100%;
+    display: flex;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.post_item {
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.right_post_item {
+    width: 60%;
+}
+
+.category_filter {
+    width: 50%;
+}
+
+.list_and_grid_button {
+    width: 50%;
+}
+
+.list_item{
+    width:100%;
+    flex-direction: row;
+    text-align: left;
+}
+
+.grid_item{
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.grid_item > .post_thumbnail{
+    width: 100%;
+}
+
+.grid_item > .right_post_item{
+    width: 100%;
+}
+
+.list_item > .post_thumbnail{
+    width: 30%;
+}
+.list_item > .right_post_item{
+    width: 70%;
+}
