@@ -1,15 +1,22 @@
 $('document').ready(function () {
     $(".post_filter").on('change', function () {
         var postFilterValue = $(this).val();
-        $(".post_item").each(function () {
-            var postAttr = $(this).attr("category");
 
-            if (postFilterValue == postAttr) {
+        if(postFilterValue == "more"){
+            $(".post_item").each(function () {
                 $(this).css({ "display": "flex" });
-            } else {
-                $(this).css({ "display": "none" });
-            }
-        });
+            });
+        }else{
+            $(".post_item").each(function () {
+                var postAttr = $(this).attr("category");
+
+                if (postFilterValue == postAttr) {
+                    $(this).css({ "display": "flex" });
+                } else {
+                    $(this).css({ "display": "none" });
+                }
+            });
+        }
     });
 
     $('.list_button').click(function () {
